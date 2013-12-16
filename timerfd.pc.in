@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: timerfd API
+Description: Provide the timerfd API for old libc
+Version: @VERSION@
+Libs: -L${libdir} -ltimerfd
+Cflags: -I${includedir}
