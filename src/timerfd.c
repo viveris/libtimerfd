@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <sys/syscall.h>
 
+#include "syscall.h"
+
 int timerfd_create(clockid_t clockid, int flags)
 {
 	return syscall(SYS_timerfd_create, clockid, flags);

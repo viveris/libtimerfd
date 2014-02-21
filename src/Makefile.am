@@ -27,3 +27,5 @@ sysheaders_HEADERS = include/sys/timerfd.h
 bitsheadersdir = $(includedir)/bits
 bitsheaders_HEADERS = include/bits/timerfd.h
 
+noinst_HEADERS = syscall.h
+
