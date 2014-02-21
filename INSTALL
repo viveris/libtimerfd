@@ -1,0 +1,33 @@
+Installation instructions
+
+== Requirements ==
+
+Build:
+ * autotools
+ * make
+ * any C compiler such as gcc, cmake, or tcc
+
+Runtime:
+ * any libc with syscall(2) syscall
+
+== Build ==
+
+From a tarball:
+ $ tar xvjf libtimerfd-X.Y.Z.tar.bz2
+ $ cd libtimerfd-X.Y.Z/
+ $ ./configure [options]
+ $ make
+ $ make install
+
+From the source repository:
+ $ git clone <url>
+ $ cd libtimerfd/
+ $ ./autogen.sh [options]
+ $ make
+ $ make install
+
+You may get help about available options with:
+ $ ./autogen.sh --help
+or:
+ $ ./configure --help
+
