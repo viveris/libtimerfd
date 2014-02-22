@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
 	}
 
 	/* bad fd */
-	assert(timerfd_settime(-1, 0, &new, NULL) != 0 && errno == EBADF);
+	assert(timerfd_settime(-1, 0, &new, NULL) != 0 &&
+	       (errno == EBADF || errno == EINVAL));
 	/* bad pointer */
 	assert(timerfd_settime(fd, 0, NULL, NULL) != 0 && errno == EFAULT);
 	/* ok without old value */
