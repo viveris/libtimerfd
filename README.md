@@ -1,4 +1,4 @@
-libtimerfd
+libtimerfd [![Build Status](https://travis-ci.org/viveris/libtimerfd.png?branch=master)](https://travis-ci.org/viveris/libtimerfd)
 ==========
 
 
