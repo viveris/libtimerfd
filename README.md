@@ -1,5 +1,5 @@
-libtimerfd README
-=================
+libtimerfd
+==========
 
 
 purpose
