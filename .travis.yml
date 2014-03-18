@@ -2,3 +2,4 @@ language: c
 compiler:
   - clang
   - gcc
+script: ./autogen.sh && make clean && make all && make check && make distcheck
